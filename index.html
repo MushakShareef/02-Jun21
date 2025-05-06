@@ -38,18 +38,21 @@
 
         <!-- container child 3 -->
         <div class="form">
-            <form action="">
+            <form id="wishForm">
                 <label for="input-HTML"> Name : </label>
-                <input id="input-HTML" type="text" placeholder="Enter Your Name">
+                <input id="input-HTML" type="text" placeholder="Enter Your Name" required>
                 <br>
-                <label for="">Language : </label>
-                <select name="" id="select-HTML">
-                    <option value="">தமிழ்</option>
-                    <option value="">English</option>
-                </select>                
+
+                <label for="select-HTML">Language : </label>
+                <select id="select-HTML" required>
+                    <option value="">--Select--</option>
+                    <option value="Tamil">தமிழ்</option>
+                    <option value="English">English</option>
+                </select>   <br>   
+                <button id="btn-HTML" type="submit">Get your wishes</button>          
             </form>            
         </div>
-        <button id="btn-HTML" type="submit">Get your wishes</button>
+        
     </div>  
 </body>
 </html>
