@@ -111,39 +111,6 @@ img {
     color: #ffcc66;
 }
 
-/* ✅ Mobile-friendly font sizing */
-@media (max-width: 600px) {
-  
-    .bkIntro {
-        font-size: 16px;
-    }
-
-    .bkIntro h2 {
-        font-size: 18px;
-    }
-}
-
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .wishOutput {
-        width: 90%;
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .salute {
-        font-size: 20px;
-    }
-
-    .hq-address {
-        font-size: 14px;
-    }
-
-    .hq-address h3 {
-        font-size: 16px;
-    }
-}
 
 #flower-container {
     position: fixed;
@@ -187,8 +154,43 @@ img {
 #downloadBtn:active {
     background-color: #ff3300; /* Even darker on click */
     transform: scale(1); /* Reset the size when clicked */
+} */
+
+
+
+/* ✅ Mobile-friendly font sizing */
+@media (max-width: 600px) {
+  
+    .bkIntro {
+        font-size: 16px;
+    }
+
+    .bkIntro h2 {
+        font-size: 18px;
+    }
 }
 
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .wishOutput {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .salute {
+        font-size: 20px;
+    }
+
+    .hq-address {
+        font-size: 14px;
+    }
+
+    .hq-address h3 {
+        font-size: 16px;
+    }
+}
 
 
 @media (max-width: 480px) {

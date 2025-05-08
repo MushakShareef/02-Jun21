@@ -86,27 +86,38 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 //// for downloading it
-document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.getElementById("downloadBtn");
 
-    if (btn) {
-        btn.addEventListener("click", function () {
-            // Select the div you want to capture (wishOutput or any other container)
-            const wishSection = document.querySelector(".wishOutput");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const downloadButton = document.getElementById('downloadBtn');
 
-            if (wishSection) {
-                // Use html2canvas to capture the div as an image
-                html2canvas(wishSection, {
-                    backgroundColor: "#001122",  // Adjust background if needed
-                    scale: 2,                    // Optional, for higher quality image
-                    useCORS: true                // Allow CORS if any external images
-                }).then(canvas => {
-                    const link = document.createElement("a");
-                    link.download = "My_Blessing.png";  // Name of the downloaded file
-                    link.href = canvas.toDataURL("image/png");  // Convert canvas to image data URL
-                    link.click();  // Trigger the download
-                });
-            }
-        });
-    }
-});
+//     downloadButton.addEventListener('click', function () {
+//         // Check if .ovrall is rendered and contains the content we want to capture
+//         const targetElement = document.querySelector(".ovrall");
+        
+//         if (!targetElement) {
+//             console.error("Element .ovrall not found!");
+//             return;
+//         }
+
+//         console.log("Capturing the .ovrall content...");
+
+//         html2canvas(targetElement).then(function(canvas) {
+//             console.log("Canvas generated:", canvas); // Log the canvas to the console for debugging
+
+//             // If canvas width or height is zero, the content may not be captured correctly
+//             if (canvas.width === 0 || canvas.height === 0) {
+//                 console.error("Canvas has zero width or height, capture failed.");
+//                 return;
+//             }
+
+//             // Create a download link
+//             var link = document.createElement("a");
+//             link.href = canvas.toDataURL("image/png"); // Convert the canvas to a PNG data URL
+//             link.download = "blessing_image.png"; // Set the download file name
+//             link.click(); // Trigger the download
+//         }).catch(function(error) {
+//             console.error("Error during html2canvas execution:", error);
+//         });
+//     });
+// });
+
