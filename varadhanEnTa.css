@@ -94,20 +94,7 @@ img {
     color: #ffdd55;
 }
 
-/* ✅ Mobile-friendly font sizing */
-@media (max-width: 600px) {
-    .wishOutput p {
-        font-size: 16px;
-    }
 
-    .bkIntro {
-        font-size: 16px;
-    }
-
-    .bkIntro h2 {
-        font-size: 18px;
-    }
-}
 
 .hq-address {
     margin-top: 20px;
@@ -123,11 +110,24 @@ img {
     color: #ffcc66;
 }
 
+/* ✅ Mobile-friendly font sizing */
+@media (max-width: 600px) {
+  
+    .bkIntro {
+        font-size: 16px;
+    }
+
+    .bkIntro h2 {
+        font-size: 18px;
+    }
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .wishOutput {
         width: 90%;
-        font-size: 12px;
+        font-size: 14px;
         padding: 10px;
     }
 
@@ -141,6 +141,17 @@ img {
 
     .hq-address h3 {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wishOutput {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .wishOutput p {
+        font-size: 10px;
     }
 }
 
