@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     font-family: 'Arial', sans-serif;
     background: #001122;
     color: #333;
@@ -22,8 +22,10 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #ff6600;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
     animation: fadeInDown 1.5s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 img {
@@ -48,12 +50,13 @@ img {
     border-radius: 12px;
 }
 
+/* Existing styles for .wishOutput */
 .wishOutput {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.6); /* dark semi-transparent background */
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 12px;
     width: 80%;
@@ -65,11 +68,60 @@ img {
 .wishOutput p {
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff; /* white text */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9); /* for visibility */
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
     line-height: 1.6;
 }
 
+/* Existing styles for .bkIntro */
+.bkIntro {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 30px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bkIntro h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffdd55;
+}
+
+/* ✅ Mobile-friendly font sizing */
+@media (max-width: 600px) {
+    .wishOutput p {
+        font-size: 16px;
+    }
+
+    .bkIntro {
+        font-size: 16px;
+    }
+
+    .bkIntro h2 {
+        font-size: 18px;
+    }
+}
+
+.hq-address {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffeecc;
+}
+
+.hq-address h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ffcc66;
+}
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
@@ -81,6 +133,14 @@ img {
 
     .salute {
         font-size: 20px;
+    }
+
+    .hq-address {
+        font-size: 14px;
+    }
+
+    .hq-address h3 {
+        font-size: 16px;
     }
 }
 
