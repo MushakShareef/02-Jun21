@@ -127,7 +127,7 @@ img {
 @media (max-width: 600px) {
     .wishOutput {
         width: 90%;
-        font-size: 16px;
+        font-size: 12px;
         padding: 10px;
     }
 
