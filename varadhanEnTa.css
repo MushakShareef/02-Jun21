@@ -166,7 +166,7 @@ img {
     }
 
     .bkIntro h2 {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -175,7 +175,7 @@ img {
 @media (max-width: 600px) {
     .wishOutput {
         width: 90%;
-        font-size: 14px;
+        font-size: 20px;
         padding: 10px;
     }
 
@@ -195,12 +195,12 @@ img {
 
 @media (max-width: 480px) {
     .wishOutput {
-        font-size: 16px;
+        font-size: 18px;
         padding: 12px;
     }
 
     .wishOutput p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
